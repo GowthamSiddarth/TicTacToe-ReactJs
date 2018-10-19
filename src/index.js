@@ -99,7 +99,7 @@ class Game extends Component {
         const moves = history.map((step, move) => {
             const desc = move ? 'Goto step #' + move : 'Goto game start';
             return (
-                <li>
+                <li key={move}>
                     <button>{desc}</button>
                 </li>
             );
